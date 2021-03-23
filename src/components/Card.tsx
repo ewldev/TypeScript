@@ -6,7 +6,7 @@ interface CardStatelessProps {
   id: number
 }
 
-const Card: React.SFC<CardStatelessProps> = ({ name, email, id }) => {
+const Card: React.FC<CardStatelessProps> = ({ name, email, id }) => {
   return (
     <div className='tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5'>
       <img alt='robots' src={`https://robohash.org/${id}?200x200`} />
